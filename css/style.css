@@ -67,8 +67,9 @@
 .footer-container {
     border-top: 1px solid var(--footor-background-color);
 }
-.accent-text {
+.link.accent-text {
     font-weight: bold;
+    color: var(--logo-black-color);
 }
 /* modal window */
 .backdrop {
