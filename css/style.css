@@ -1,0 +1,81 @@
+:root {
+    --primary-text-color: #212121;
+    --paragraph-text-color: #757575;
+    --accent-color: #2196F3;
+    --body-background-color: #FFFFFF;
+    --logo-black-color: #000000;
+    --footor-background-color: #2F303A;
+    --team-background-color: #F5F4FA;
+    --footer-info-color: rgba(255, 255, 255, 0.6);
+    --primary-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    --secondary-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --card-border-color: 1px solid #EEEEEE;
+    --icon-color: #AFB1B8;
+    --icon-background-color: rgba(255, 255, 255, 0.1);
+    --header-border-color: 1px solid #ECECEC;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.body {
+    background-color: var(--body-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', 'Arial', sans-serif;
+ }
+ .container {
+     width: 1200px;
+     padding: 0 15px;
+     margin: 0 auto;
+ }
+ .link {
+     text-decoration: none;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ button {
+    border: 1px solid transparent;
+    color: var(--body-background-color);
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    box-shadow: var(--primary-button-shadow);
+    padding: 10px 25px;
+    cursor: pointer;
+ }
+ .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ 
+ .first-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 40px;
+ }
+ .second-section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+ }
+ .section-text {
+    max-width: 500px;
+
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+ }
+.footer-container {
+    border-top: 1px solid var(--footor-background-color);
+}
+.accent-text {
+    font-weight: bold;
+}
