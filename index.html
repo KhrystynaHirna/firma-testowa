@@ -22,7 +22,7 @@
                 <div>
                     <h2>Lorem ipsum</h2>
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button type="button" data-modal-open>Kontakt</button>
+                    <button type="button" data-modal-open-first>Kontakt</button>
                 </div>
                 <div>
                     <img src="./img/people.jpg" alt="wiele osób siedzi w parku na ziemi" width="550" height="370">
@@ -35,7 +35,7 @@
                 <div>
                     <h2>Lorem ipsum</h2>
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button type="button" data-modal-open>Kontakt</button>
+                    <button type="button" data-modal-open-second>Kontakt</button>
                 </div>                             
             </section>    
         </div>
@@ -45,8 +45,8 @@
             <p class="section-text"><span class="accent-text">Firma Testowa Sp. z o.o.</span><br>ul. Testerów 123<br>01-111 Testowo</p>
         </div>
     </footer> 
-    <!-- modal window -->
 
+    <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="close-button" data-modal-close>
@@ -91,6 +91,103 @@
                  <button type="submit">Wyslij</button>
               </div>
           </form>
+        </div>
+     </div>
+
+        <!-- modal-window-first -->
+        <div class="backdrop is-hidden" data-modal-first>
+            <div class="modal">
+              <button type="button" class="close-button" data-modal-close-first>
+                  <svg class="icon-close" width="18px" height="18px">
+                  <use href="./img/sprite.svg#icon-cross"></use>
+                </svg>
+              </button>
+              <p class="modal-title">Zostaw swoje dane, skontaktujemy się z Tobą</p>
+              
+          <!-- modal form -->
+              <form action="modal-form">
+                <div class="form-field">  
+                  <label class="form-field-title" for="name">Imię</label>
+                  <input class="form-field-input" type="text" name="name" id="name">
+                   <svg class="overlay-modal" width="18px" height="18px">
+                    <use href="./img/sprite.svg#icon-user"></use>
+                  </svg>
+                </div>
+                
+                <div class="form-field">
+                    <label class="form-field-title" for="tel">Telefon</label>
+                    <input class="form-field-input" type="tel" name="tel" id="tel" >
+                    <svg class="overlay-modal" width="18px" height="18px">
+                    <use href="./img/sprite.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">
+                  <label class="form-field-title" for="mail">Email</label>
+                  <input class="form-field-input" type="email" name="mail" id="mail">
+                  <svg class="overlay-modal" width="18px" height="18px">
+                  <use href="./img/sprite.svg#icon-mail2"></use>
+                </svg>
+                </div>
+                
+                <div class="form-field-comment"> 
+                  <label class="form-field-title" for="comment">Komentarz</label>
+                  <textarea class="commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                </div>
+                  
+                  <div class="form-field-button">
+                     <button type="submit">Wyslij</button>
+                  </div>
+              </form>
+            </div>
+        </div>
+
+         <!-- modal-window-second -->
+         <div class="backdrop is-hidden" data-modal-second>
+            <div class="modal">
+              <button type="button" class="close-button" data-modal-close-second>
+                  <svg class="icon-close" width="18px" height="18px">
+                  <use href="./img/sprite.svg#icon-cross"></use>
+                </svg>
+              </button>
+              <p class="modal-title">Zostaw swoje dane, skontaktujemy się z Tobą</p>
+              
+          <!-- modal form -->
+              <form action="modal-form">
+                <div class="form-field">  
+                  <label class="form-field-title" for="name">Imię</label>
+                  <input class="form-field-input" type="text" name="name" id="name">
+                   <svg class="overlay-modal" width="18px" height="18px">
+                    <use href="./img/sprite.svg#icon-user"></use>
+                  </svg>
+                </div>
+                
+                <div class="form-field">
+                    <label class="form-field-title" for="tel">Telefon</label>
+                    <input class="form-field-input" type="tel" name="tel" id="tel" >
+                    <svg class="overlay-modal" width="18px" height="18px">
+                    <use href="./img/sprite.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                
+                <div class="form-field">
+                  <label class="form-field-title" for="mail">Email</label>
+                  <input class="form-field-input" type="email" name="mail" id="mail">
+                  <svg class="overlay-modal" width="18px" height="18px">
+                  <use href="./img/sprite.svg#icon-mail2"></use>
+                </svg>
+                </div>
+                
+                <div class="form-field-comment"> 
+                  <label class="form-field-title" for="comment">Komentarz</label>
+                  <textarea class="commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                </div>
+                  
+                  <div class="form-field-button">
+                     <button type="submit">Wyslij</button>
+                  </div>
+              </form>
+            </div>
         </div>
       <script src="./js/modal.js"></script>
 </body>
