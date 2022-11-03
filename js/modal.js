@@ -7,9 +7,27 @@
   
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
+    window.addEventListener('keydown', onEscKeyPress);
+    window.addEventListener('click', onBackdropClick);
   
     function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
+    }
+    function onEscKeyPress(event) {
+      const ESC_KEY_CODE = 'Escape';
+      if (event.code === ESC_KEY_CODE) {
+        
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('keydown', onEscKeyPress);
+      }
+    }
+    function onBackdropClick(event) {
+      if (event.target == refs.modal) {
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('click', onBackdropClick);
+      }
     }
   })();
 
@@ -22,9 +40,27 @@
   
     refs.openModalBtn1.addEventListener('click', toggleModal);
     refs.closeModalBtn1.addEventListener('click', toggleModal);
+    window.addEventListener('keydown', onEscKeyPress);
+    window.addEventListener('click', onBackdropClick);
   
     function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
+    }
+    function onEscKeyPress(event) {
+      const ESC_KEY_CODE = 'Escape';
+      if (event.code === ESC_KEY_CODE) {
+        
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('keydown', onEscKeyPress);
+      }
+    }
+    function onBackdropClick(event) {
+      if (event.target == refs.modal) {
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('click', onBackdropClick);
+      }
     }
   })();
 
@@ -37,9 +73,27 @@
   
     refs.openModalBtn2.addEventListener('click', toggleModal);
     refs.closeModalBtn2.addEventListener('click', toggleModal);
+    window.addEventListener('keydown', onEscKeyPress);
+    window.addEventListener('click', onBackdropClick);
   
     function toggleModal() {
       refs.modal.classList.toggle('is-hidden');
+    }
+    function onEscKeyPress(event) {
+      const ESC_KEY_CODE = 'Escape';
+      if (event.code === ESC_KEY_CODE) {
+        
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('keydown', onEscKeyPress);
+      }
+    }
+    function onBackdropClick(event) {
+      if (event.target == refs.modal) {
+        refs.modal.classList.add('is-hidden');
+        body.style.overflow = "auto";
+        window.removeEventListener('click', onBackdropClick);
+      }
     }
   })();
 
